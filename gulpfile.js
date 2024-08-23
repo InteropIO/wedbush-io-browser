@@ -47,7 +47,7 @@ const clearNodeModules = (client) => () => {
 };
 
 const copyPlatformConfig = async () => {
-    await copyFile(path.join(__dirname, "config.json"), path.join(__dirname, "workspace-platform", "src", "config.json"));
+    await copyFile(path.join(__dirname, "config.json"), path.join(__dirname, "home-ui-react", "src", "config.json"));
 };
 
 const buildProdApp = (client) => async () => {
