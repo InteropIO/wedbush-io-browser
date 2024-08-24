@@ -1,6 +1,9 @@
 {
     "browserPlatform": {
         "licenseKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmF0aW9uIjoxNzI5MDI2MDAwLCJ0eXBlIjoidHJpYWwifQ.eAAUGkF9mdMTRupcFGS2TAIhLxD7XJDUcFi4wZb0jYQ",
+        "themes": {
+            "defaultTheme": "os"
+        },
         "workspaces": {
             "src": "/",
             "isFrame": true
