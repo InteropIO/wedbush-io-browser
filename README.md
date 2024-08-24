@@ -11,5 +11,9 @@ Valid license key for **io.Connect Browser** is required.
 - Rename the `.env.example` file to `.env`. Open the file and provide a valid license key for **io.Connect Browser**.
 - Run `npm install` to install all dependencies.
 - Run `npm run start` to start the app.
+- Run the build app at port 4000
+  ```
+  npx serve -s build -l 4000
+  ```
 
 *For more details on using the [`@interopio/home-ui-react`](https://www.npmjs.com/package/@interopio/home-ui-react) library, see the **io.Connect Browser** [official documentation](https://docs.interop.io/browser/capabilities/home-app/library-features/index.html).*
