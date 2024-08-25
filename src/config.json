@@ -17,6 +17,28 @@
         "applications": {
             "local": [
                 {
+                    "name": "AIW SSO",
+                    "type": "window",
+                    "title": "AIW SSO",
+                    "details": {
+                        "url": "http://localhost:3000/"
+                    },
+                    "customProperties": {
+                        "includeInWorkspaces": true
+                    }
+                },
+                {
+                    "name": "AIW Search UAT",
+                    "type": "window",
+                    "title": "AIW Search UAT",
+                    "details": {
+                        "url": "https://clientsearch-uat.azurewebsites.net/"
+                    },
+                    "customProperties": {
+                        "includeInWorkspaces": true
+                    }
+                },
+                {
                     "name": "React Client",
                     "type": "window",
                     "title": "React Client",
