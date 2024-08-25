@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  home-ui-react:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+    command: npm run preview
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
