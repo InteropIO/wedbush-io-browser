@@ -4,7 +4,16 @@ const copyFile = require("node:fs/promises").copyFile;
 const rimraf = require("rimraf");
 const path = require("path");
 
-const clientsSources = ["home-ui-react/", "react-client/"];
+const clientsSources = [
+"home-ui-react/", 
+"react-client/", 
+"demo-apps/client-details",
+"demo-apps/clients",
+"demo-apps/portfolio-downloader",
+"demo-apps/rest-server",
+"demo-apps/stock-details",
+"demo-apps/stocks"
+];
 const builtClients = ["intents-resolver-ui/"];
 
 const originalStdoutWrite = process.stdout.write.bind(process.stdout);

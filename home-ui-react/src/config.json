@@ -8,7 +8,284 @@
         "layouts": {
             "mode": "idb",
             "local": [
-                {"name":"Welcome","type":"Workspace","metadata":null,"components":[{"type":"Workspace","state":{"children":[{"type":"row","children":[{"type":"group","children":[{"type":"window","config":{"minHeight":20,"allowReorder":true,"widthInPx":957,"maxHeight":32767,"allowExtract":true,"minWidth":20,"appName":"React Client","context":{},"title":"React Client","showCloseButton":true,"isSelected":true,"heightInPx":918,"maxWidth":32767,"isMaximized":false,"isFocused":false}}],"config":{"allowDropBottom":true,"workspaceId":"0XfglHadW","width":50,"showMaximizeButton":true,"minHeight":50,"height":null,"allowDropRight":true,"positionIndex":0,"allowReorder":true,"allowDrop":true,"isPinned":false,"widthInPx":957,"maxHeight":32767,"showEjectButton":true,"allowExtract":true,"minWidth":20,"activeTabIndex":0,"maximizationBoundary":false,"frameId":"ZSLsfL8gK","showAddWindowButton":true,"allowDropTop":true,"heightInPx":948,"maxWidth":32767,"isMaximized":false,"allowDropLeft":true,"allowDropHeader":true}},{"type":"group","children":[{"type":"window","config":{"minHeight":20,"allowReorder":true,"widthInPx":957,"maxHeight":32767,"allowExtract":true,"minWidth":20,"appName":"io.Connect Browser Docs","context":{},"title":"Documentation","showCloseButton":true,"isSelected":true,"heightInPx":918,"maxWidth":32767,"isMaximized":false,"isFocused":false}},{"type":"window","config":{"minHeight":20,"allowReorder":true,"widthInPx":0,"maxHeight":32767,"allowExtract":true,"minWidth":20,"appName":"context-viewer","context":{},"title":"Context Viewer","showCloseButton":true,"isSelected":false,"heightInPx":0,"maxWidth":32767,"isMaximized":false,"isFocused":false}},{"type":"window","config":{"minHeight":20,"allowReorder":true,"widthInPx":0,"maxHeight":32767,"allowExtract":true,"minWidth":20,"appName":"interop-viewer","context":{},"title":"Interop Viewer","showCloseButton":true,"isSelected":false,"heightInPx":0,"maxWidth":32767,"isMaximized":false,"isFocused":false}}],"config":{"allowDropBottom":true,"workspaceId":"0XfglHadW","width":50,"showMaximizeButton":true,"minHeight":50,"height":null,"allowDropRight":true,"positionIndex":1,"allowReorder":true,"allowDrop":true,"isPinned":false,"widthInPx":957,"maxHeight":32767,"showEjectButton":true,"allowExtract":true,"minWidth":20,"activeTabIndex":0,"maximizationBoundary":false,"frameId":"ZSLsfL8gK","showAddWindowButton":true,"allowDropTop":true,"heightInPx":948,"maxWidth":32767,"isMaximized":false,"allowDropLeft":true,"allowDropHeader":true}}],"config":{"workspaceId":"0XfglHadW","width":null,"minHeight":50,"height":null,"positionIndex":0,"allowDrop":true,"isPinned":false,"widthInPx":1919,"maxHeight":32767,"minWidth":40,"allowSplitters":true,"activeTabIndex":null,"maximizationBoundary":false,"frameId":"ZSLsfL8gK","heightInPx":948,"maxWidth":32767,"isMaximized":false}}],"config":{"allowDropBottom":true,"workspaceId":"0XfglHadW","minHeight":50,"allowDropRight":true,"lastActive":1667809644726,"showWindowCloseButtons":true,"allowDrop":true,"isPinned":false,"widthInPx":1920,"maxHeight":32767,"allowExtract":true,"minWidth":40,"allowSplitters":true,"showEjectButtons":true,"name":"Welcome","allowWorkspaceTabReorder":true,"context":{},"showSaveButton":true,"showAddWindowButtons":true,"allowDropTop":true,"showCloseButton":true,"isSelected":true,"heightInPx":949,"maxWidth":32767,"isHibernated":false,"allowWindowReorder":true,"allowDropLeft":true,"icon":null},"context":{}}}]}
+                {
+                    "name": "Welcome",
+                    "type": "Workspace",
+                    "metadata": null,
+                    "components": [
+                        {
+                            "type": "Workspace",
+                            "state": {
+                                "children": [
+                                    {
+                                        "type": "row",
+                                        "children": [
+                                            {
+                                                "type": "group",
+                                                "children": [
+                                                    {
+                                                        "type": "window",
+                                                        "config": {
+                                                            "minHeight": 20,
+                                                            "allowReorder": true,
+                                                            "widthInPx": 957,
+                                                            "maxHeight": 32767,
+                                                            "allowExtract": true,
+                                                            "minWidth": 20,
+                                                            "appName": "React Client",
+                                                            "context": {},
+                                                            "title": "React Client",
+                                                            "showCloseButton": true,
+                                                            "isSelected": true,
+                                                            "heightInPx": 918,
+                                                            "maxWidth": 32767,
+                                                            "isMaximized": false,
+                                                            "isFocused": false
+                                                        }
+                                                    }
+                                                ],
+                                                "config": {
+                                                    "allowDropBottom": true,
+                                                    "workspaceId": "0XfglHadW",
+                                                    "width": 50,
+                                                    "showMaximizeButton": true,
+                                                    "minHeight": 50,
+                                                    "height": null,
+                                                    "allowDropRight": true,
+                                                    "positionIndex": 0,
+                                                    "allowReorder": true,
+                                                    "allowDrop": true,
+                                                    "isPinned": false,
+                                                    "widthInPx": 957,
+                                                    "maxHeight": 32767,
+                                                    "showEjectButton": true,
+                                                    "allowExtract": true,
+                                                    "minWidth": 20,
+                                                    "activeTabIndex": 0,
+                                                    "maximizationBoundary": false,
+                                                    "frameId": "ZSLsfL8gK",
+                                                    "showAddWindowButton": true,
+                                                    "allowDropTop": true,
+                                                    "heightInPx": 948,
+                                                    "maxWidth": 32767,
+                                                    "isMaximized": false,
+                                                    "allowDropLeft": true,
+                                                    "allowDropHeader": true
+                                                }
+                                            },
+                                            {
+                                                "type": "group",
+                                                "children": [
+                                                    {
+                                                        "type": "window",
+                                                        "config": {
+                                                            "minHeight": 20,
+                                                            "allowReorder": true,
+                                                            "widthInPx": 957,
+                                                            "maxHeight": 32767,
+                                                            "allowExtract": true,
+                                                            "minWidth": 20,
+                                                            "appName": "io.Connect Browser Docs",
+                                                            "context": {},
+                                                            "title": "Documentation",
+                                                            "showCloseButton": true,
+                                                            "isSelected": true,
+                                                            "heightInPx": 918,
+                                                            "maxWidth": 32767,
+                                                            "isMaximized": false,
+                                                            "isFocused": false
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "window",
+                                                        "config": {
+                                                            "minHeight": 20,
+                                                            "allowReorder": true,
+                                                            "widthInPx": 0,
+                                                            "maxHeight": 32767,
+                                                            "allowExtract": true,
+                                                            "minWidth": 20,
+                                                            "appName": "context-viewer",
+                                                            "context": {},
+                                                            "title": "Context Viewer",
+                                                            "showCloseButton": true,
+                                                            "isSelected": false,
+                                                            "heightInPx": 0,
+                                                            "maxWidth": 32767,
+                                                            "isMaximized": false,
+                                                            "isFocused": false
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "window",
+                                                        "config": {
+                                                            "minHeight": 20,
+                                                            "allowReorder": true,
+                                                            "widthInPx": 0,
+                                                            "maxHeight": 32767,
+                                                            "allowExtract": true,
+                                                            "minWidth": 20,
+                                                            "appName": "interop-viewer",
+                                                            "context": {},
+                                                            "title": "Interop Viewer",
+                                                            "showCloseButton": true,
+                                                            "isSelected": false,
+                                                            "heightInPx": 0,
+                                                            "maxWidth": 32767,
+                                                            "isMaximized": false,
+                                                            "isFocused": false
+                                                        }
+                                                    }
+                                                ],
+                                                "config": {
+                                                    "allowDropBottom": true,
+                                                    "workspaceId": "0XfglHadW",
+                                                    "width": 50,
+                                                    "showMaximizeButton": true,
+                                                    "minHeight": 50,
+                                                    "height": null,
+                                                    "allowDropRight": true,
+                                                    "positionIndex": 1,
+                                                    "allowReorder": true,
+                                                    "allowDrop": true,
+                                                    "isPinned": false,
+                                                    "widthInPx": 957,
+                                                    "maxHeight": 32767,
+                                                    "showEjectButton": true,
+                                                    "allowExtract": true,
+                                                    "minWidth": 20,
+                                                    "activeTabIndex": 0,
+                                                    "maximizationBoundary": false,
+                                                    "frameId": "ZSLsfL8gK",
+                                                    "showAddWindowButton": true,
+                                                    "allowDropTop": true,
+                                                    "heightInPx": 948,
+                                                    "maxWidth": 32767,
+                                                    "isMaximized": false,
+                                                    "allowDropLeft": true,
+                                                    "allowDropHeader": true
+                                                }
+                                            }
+                                        ],
+                                        "config": {
+                                            "workspaceId": "0XfglHadW",
+                                            "width": null,
+                                            "minHeight": 50,
+                                            "height": null,
+                                            "positionIndex": 0,
+                                            "allowDrop": true,
+                                            "isPinned": false,
+                                            "widthInPx": 1919,
+                                            "maxHeight": 32767,
+                                            "minWidth": 40,
+                                            "allowSplitters": true,
+                                            "activeTabIndex": null,
+                                            "maximizationBoundary": false,
+                                            "frameId": "ZSLsfL8gK",
+                                            "heightInPx": 948,
+                                            "maxWidth": 32767,
+                                            "isMaximized": false
+                                        }
+                                    }
+                                ],
+                                "config": {
+                                    "allowDropBottom": true,
+                                    "workspaceId": "0XfglHadW",
+                                    "minHeight": 50,
+                                    "allowDropRight": true,
+                                    "lastActive": 1667809644726,
+                                    "showWindowCloseButtons": true,
+                                    "allowDrop": true,
+                                    "isPinned": false,
+                                    "widthInPx": 1920,
+                                    "maxHeight": 32767,
+                                    "allowExtract": true,
+                                    "minWidth": 40,
+                                    "allowSplitters": true,
+                                    "showEjectButtons": true,
+                                    "name": "Welcome",
+                                    "allowWorkspaceTabReorder": true,
+                                    "context": {},
+                                    "showSaveButton": true,
+                                    "showAddWindowButtons": true,
+                                    "allowDropTop": true,
+                                    "showCloseButton": true,
+                                    "isSelected": true,
+                                    "heightInPx": 949,
+                                    "maxWidth": 32767,
+                                    "isHibernated": false,
+                                    "allowWindowReorder": true,
+                                    "allowDropLeft": true,
+                                    "icon": null
+                                },
+                                "context": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Client Details Workspace",
+                    "type": "Workspace",
+                    "metadata": {},
+                    "components": [
+                        {
+                            "type": "Workspace",
+                            "state": {
+                                "children": [
+                                    {
+                                        "type": "column",
+                                        "children": [
+                                            {
+                                                "type": "row",
+                                                "children": [
+                                                    {
+                                                        "type": "group",
+                                                        "children": [
+                                                            {
+                                                                "type": "window",
+                                                                "config": {
+                                                                    "appName": "Clients",
+                                                                    "title": "Clients"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "config": {}
+                                                    },
+                                                    {
+                                                        "type": "column",
+                                                        "children": [
+                                                            {
+                                                                "type": "group",
+                                                                "children": [
+                                                                    {
+                                                                        "type": "window",
+                                                                        "config": {
+                                                                            "appName": "Client Details",
+                                                                            "title": "Client Details"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "config": {}
+                                                            }
+                                                        ],
+                                                        "config": {}
+                                                    }
+                                                ],
+                                                "config": {}
+                                            }
+                                        ],
+                                        "config": {}
+                                    }
+                                ],
+                                "config": {
+                                    "name": "Client Details Space",
+                                    "title": ""
+                                },
+                                "context": {}
+                            }
+                        }
+                    ]
+                }
             ]
         },
         "applications": {
@@ -33,7 +310,8 @@
                         "url": "https://docs.interop.io/browser/getting-started/what-is-io-connect-browser/index.html"
                     },
                     "customProperties": {
-                        "includeInWorkspaces": true
+                        "includeInWorkspaces": true,
+                        "folder": "Test folder"
                     }
                 },
                 {
@@ -55,10 +333,7 @@
                     "details": {
                         "url": "https://devtools.glue42.com/js-interop-viewer/index.html#/stream-subscription"
                     },
-                    "hidden": true,
-                    "customProperties": {
-                        "folder":"Test folder"
-                    }
+                    "hidden": true
                 },
                 {
                     "name": "InvokeMethod",
@@ -80,15 +355,82 @@
                         "includeInWorkspaces": true
                     }
                 },
-				{
-					"name": "intentsResolver",
-					"type": "window",
-					"title": "Intents Resolver",
-					"details": {
-						"url": "http://localhost:4221/"
-					},
-					"customProperties": {}
-				}
+                {
+                    "name": "intentsResolver",
+                    "type": "window",
+                    "title": "Intents Resolver",
+                    "details": {
+                        "url": "http://localhost:4221/"
+                    },
+                    "customProperties": {}
+                },
+                {
+                    "name": "Clients",
+                    "type": "window",
+                    "details": {
+                        "url": "http://localhost:4001"
+                    },
+                    "customProperties": {
+                        "includeInWorkspaces": true,
+                        "folder": "Tutorial apps"
+                    }
+                },
+                {
+                    "name": "Stocks",
+                    "type": "window",
+                    "details": {
+                        "url": "http://localhost:4003"
+                    },
+                    "customProperties": {
+                        "includeInWorkspaces": true,
+                        "folder": "Tutorial apps"
+                    }
+                },
+                {
+                    "name": "Stock Details",
+                    "type": "window",
+                    "details": {
+                        "url": "http://localhost:4002",
+                        "allowChannels": false
+                    },
+                    "customProperties": {
+                        "includeInWorkspaces": true,
+                        "folder": "Tutorial apps"
+                    }
+                },
+                {
+                    "name": "Client Details",
+                    "type": "window",
+                    "details": {
+                        "url": "http://localhost:4000",
+                        "width": 400,
+                        "height": 400
+                    },
+                    "customProperties": {
+                        "includeInWorkspaces": true,
+                        "folder": "Tutorial apps"
+                    }
+                },
+                {
+                    "name": "Portfolio Downloader",
+                    "type": "window",
+                    "details": {
+                        "url": "http://localhost:4005"
+                    },
+                    "intents": [
+                        {
+                            "name": "ExportPortfolio",
+                            "displayName": "Download Portfolio",
+                            "contexts": [
+                                "ClientPortfolio"
+                            ]
+                        }
+                    ],
+                    "customProperties": {
+                        "includeInWorkspaces": true,
+                        "folder": "Tutorial apps"
+                    }
+                }
             ]
         },
         "channels": {
