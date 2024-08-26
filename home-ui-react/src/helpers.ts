@@ -7,7 +7,13 @@ export const getIOConfig = (): IOConnectInitSettings => {
   return {
     browserPlatform: {
       factory: IOBrowserPlatform,
-      config: Object.assign({}, config.browserPlatform, { browser: { libraries: [IOWorkspaces] }, serviceWorker: { url: "/service-worker.js" } }) as IOConnectBrowserPlatform.Config,
+      config: Object.assign({} as any, config.browserPlatform,
+        {
+          browser: { libraries: [IOWorkspaces] },
+          serviceWorker: { url: "/service-worker.js" },
+          licenseKey: process.env.REACT_APP_IOCONNECT_BROWSER_LICENSE as string
+        }
+      ) as IOConnectBrowserPlatform.Config
     },
   };
 };

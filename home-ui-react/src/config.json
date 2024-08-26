@@ -21,7 +21,8 @@
                         "url": "http://localhost:3001/"
                     },
                     "customProperties": {
-                        "includeInWorkspaces": true
+                        "includeInWorkspaces": true,
+                        "folder": "Test folder"
                     }
                 },
                 {
@@ -43,7 +44,8 @@
                         "url": "https://devtools.glue42.com/js-interop-viewer/index.html"
                     },
                     "customProperties": {
-                        "includeInWorkspaces": true
+                        "includeInWorkspaces": true,
+                        "folder": "Test folder"
                     }
                 },
                 {
@@ -53,7 +55,10 @@
                     "details": {
                         "url": "https://devtools.glue42.com/js-interop-viewer/index.html#/stream-subscription"
                     },
-                    "hidden": true
+                    "hidden": true,
+                    "customProperties": {
+                        "folder":"Test folder"
+                    }
                 },
                 {
                     "name": "InvokeMethod",
