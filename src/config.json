@@ -21,7 +21,7 @@
                     "type": "window",
                     "title": "AIW SSO",
                     "details": {
-                        "url": "http://localhost:3000/"
+                        "url": "https://aiwsso-dev.azurewebsites.net/"
                     },
                     "customProperties": {
                         "includeInWorkspaces": true
