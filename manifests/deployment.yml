@@ -1,0 +1,42 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: digitaltransformation
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aiw-workspace-platform
+  namespace: digitaltransformation
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+  #appname
+      app: aiw-workspace-platform
+  template:
+    metadata:
+      labels:
+        app: aiw-workspace-platform
+    spec:
+      containers:
+        - name: aiw-workspace-platform
+          image: wedbushdevacr.azurecr.io/aiw-workspace-platform
+          resources:
+            requests:
+              memory: '64Mi' # 0.25 CPU and 64MiB
+              cpu: '250m'
+            limits:
+              memory: '128Mi' #0.5 CPU and 128MiB
+              cpu: '500m'
+          ports:
+          #port number for digital train
+            - containerPort: 81
+      imagePullSecrets:
+      #image sec for digital train
+        - name: digital-secret

@@ -1,0 +1,57 @@
+# Deploy to Azure Kubernetes Service
+# Build and push image to Azure Container Registry; Deploy to Azure Kubernetes Service
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+#azure pipelines prod yml file is used to deploy application to prod from prod branch
+
+trigger:
+  - none
+
+pr: none
+
+resources:
+  - repo: self
+
+variables:
+  dockerRegistryServiceConnection: '2a622b79-ae48-45ad-8f4c-584e66347f60'
+  imageRepository: 'aiw-workspace-platform'
+  containerRegistry: 'wedbushprodacr.azurecr.io'
+  dockerfilePath: '**/Dockerfile'
+  tag: '$(env)-$(Build.BuildId)'
+  imagePullSecret: 'digital-secret'
+
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
+
+stages:
+  - stage: Build
+    displayName: Build stage
+    jobs:
+      - job: Build
+        displayName: Build
+        pool: 'ProdEUSDevOpsAgent'
+          #vmImage: $(vmImageName)
+        steps:
+          - task: CmdLine@2
+            inputs:
+              script: |
+                sed -i 's#AIWWORKSPACE_API_IOCONNECT_BROWSER_LICENSE#$(AIWWORKSPACE_API_IOCONNECT_BROWSER_LICENSE)#ig' ./src/settings/appConfig.ts
+                sed -i 's#AIWWORKSPACE_APPDOMAIN#$(AIWWORKSPACE_APPDOMAIN)#ig' ./src/settings/appConfig.ts
+                sed -i 's#AIWWORKSPACE_ENVNAME#$(AIWWORKSPACE_ENVNAME)#ig' ./src/settings/appConfig.ts
+                sed -i 's#AIWWORKSPACE_APPNAME#$(AIWWORKSPACE_APPNAME)#ig' ./src/settings/appConfig.ts   
+
+                sed -i 's#AIWWORKSPACE_APPDOMAIN#$(AIWWORKSPACE_APPDOMAIN)#ig' nginx.conf
+        
+                cat nginx.conf
+                cat ./src/settings/appConfig.ts
+          - task: Docker@2
+            displayName: Build and push an image to container registry
+            inputs:
+              command: buildAndPush
+              repository: $(imageRepository)
+              dockerfile: $(dockerfilePath)
+              containerRegistry: $(dockerRegistryServiceConnection)
+              tags: |
+#tag defined in azure pipelien as per env i.e. dev, uat, pl1, it picks up accordingly. for this you need to add env=dev as per env for each variable group in pipeleine              
+                $(tag)
+                latest
