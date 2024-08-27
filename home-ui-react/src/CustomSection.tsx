@@ -19,37 +19,45 @@ export const CustomSection = () => {
   const runningInstances = useApplicationsInstances()
   const [frame, setFrame] = useState<IOConnectWorkspaces.Frame | undefined>({} as any)
 
-  const [first, second, ...applicationItems] = applications.map(
-    (application) =>
-      ({
+  const sections = applications.reduce(
+    (acc, application) => {
+      const appItem = {
         id: application.name,
         title: application.title || application.name,
         description: application.caption,
         type: 'Application',
         iconSrc: application.icon,
         isOpen: runningInstances[application.name]?.length ? true : false,
-      } as BaseSectionItemType | BaseSectionType<BaseSectionItemType>)
-  )
+      } as BaseSectionItemType | BaseSectionType<BaseSectionItemType>
 
-  const items: SectionType[] = [
-    {
-      id: 'custom-folder-test',
-      title: 'Custom Folder',
-      items: first ? [first] : [],
+      const folderNames = application.userProperties?.tags
+
+      if (!folderNames || folderNames.length === 0) {
+        acc.items.push(appItem)
+      } else {
+        folderNames.forEach((folderName: string) => {
+          let folderItem = acc.items.find((item: any) => item.title === folderName)
+
+          if (folderItem) {
+            folderItem.items.push(appItem)
+          } else {
+            acc.items.push({
+              id: folderName + '-' + appItem.id,
+              title: folderName,
+              items: [appItem],
+            })
+          }
+        })
+      }
+
+      return acc
     },
     {
-      id: 'custom-folder-test-2',
-      title: 'Custom folder 2',
-      items: [
-        second || {},
-        {
-          id: 'custom-folder-test-nested',
-          title: 'Custom Nested',
-          items: applicationItems,
-        },
-      ],
-    },
-  ]
+      id: 'custom-folder',
+      title: 'Custom folder',
+      items: [],
+    } as any
+  )
 
   useEffect(() => {
     const getFrame = async () => {
@@ -101,7 +109,7 @@ export const CustomSection = () => {
       config={{
         id: 'my-section-id',
         title: 'Custom Section',
-        items,
+        items: [sections],
         iconSrc: icon,
         isCollapsible: true,
       }}
