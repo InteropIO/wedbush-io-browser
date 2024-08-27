@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: aiw-workspace-platform
+  namespace: digitaltransformation
+  annotations:
+    kubernetes.io/ingress.class: azure/application-gateway
+    #appgw.ingress.kubernetes.io/use-private-ip: "true"
+    appgw.ingress.kubernetes.io/health-probe-hostname: 'localhost'
+    appgw.ingress.kubernetes.io/health-probe-port: '81'    
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /aiw-workspace-platform #mandatory endpoint
+            pathType: Prefix
+            backend:
+              service:
+                name: aiw-workspace-platform
+                port:
+                # port number remains same for digital train
+                  number: 81

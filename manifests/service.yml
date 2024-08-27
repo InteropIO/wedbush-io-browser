@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: aiw-workspace-platform
+  namespace: digitaltransformation
+spec:
+  type: ClusterIP
+  selector:
+    app: aiw-workspace-platform
+  ports:
+    - protocol: TCP
+      port: 81
+      targetPort: 81
