@@ -17,22 +17,22 @@
         "applications": {
             "local": [
                 {
-                    "name": "AIW SSO",
+                    "name": "AIW SSO DEV",
                     "type": "window",
-                    "title": "AIW SSO",
+                    "title": "AIW SSO DEV",
                     "details": {
-                        "url": "https://aiwsso-dev.azurewebsites.net/"
+                        "url": "https://aiwsso.dev.wedbush.com/"
                     },
                     "customProperties": {
                         "includeInWorkspaces": true
                     }
                 },
                 {
-                    "name": "AIW Search UAT",
+                    "name": "AIW Search DEV",
                     "type": "window",
-                    "title": "AIW Search UAT",
+                    "title": "AIW Search DEV",
                     "details": {
-                        "url": "https://clientsearch-uat.azurewebsites.net/"
+                        "url": "https://clientsearch.dev.wedbush.com/"
                     },
                     "customProperties": {
                         "includeInWorkspaces": true
