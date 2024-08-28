@@ -2,9 +2,6 @@
 node_modules
 node_modules/
 
-# Ignore the build directory
-dist
-dist/
 
 # Ignore logs and temp files
 npm-debug.log
