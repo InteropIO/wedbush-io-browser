@@ -7,6 +7,7 @@ export default defineConfig({
     viteTsconfigPaths(),],
   server: {
     open: true, 
+    port: 3000,
   },
   build: {
     outDir: 'build',
