@@ -20,7 +20,7 @@ RUN npm run build
 FROM nginx:alpine
 
 # Expose port 80
-EXPOSE 80
+EXPOSE 8000
 
 # Define the command to run the app (this will use the default nginx entrypoint)
 CMD ["nginx", "-g", "daemon off;"]
