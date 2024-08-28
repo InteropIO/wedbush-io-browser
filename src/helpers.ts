@@ -4,6 +4,7 @@ import IOBrowserPlatform, { IOConnectBrowserPlatform } from '@interopio/browser-
 import IOWorkspaces from '@interopio/workspaces-api';
 import { IOConnectInitSettings } from '@interopio/react-hooks';
 import config from './config.json'
+import appConfig from './settings/appConfig';
 
 export const getIOConfig = (): IOConnectInitSettings => {
   return {
@@ -13,7 +14,7 @@ export const getIOConfig = (): IOConnectInitSettings => {
         {
           browser: { libraries: [IOWorkspaces] },
           serviceWorker: { url: "/service-worker.js" },
-          licenseKey: import.meta.env.VITE_APP_API_IOCONNECT_BROWSER_LICENSE
+          licenseKey: appConfig.apiConnectLicense
         }
       ) as IOConnectBrowserPlatform.Config
     },
