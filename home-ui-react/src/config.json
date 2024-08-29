@@ -228,6 +228,19 @@
     "applications": {
       "local": [
         {
+          "name": "CNN",
+          "type": "window",
+          "title": "LinkedIn",
+          "details": {
+            "url": "https://www.linkedin.com/"
+          },
+          "customProperties": {
+            "includeInWorkspaces": false,
+            "isExternal": true,
+            "folder": "Test folder"
+          }
+        },
+        {
           "name": "React Client",
           "type": "window",
           "title": "React Client",

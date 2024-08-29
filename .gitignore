@@ -22,5 +22,4 @@ yarn-error.log*
 
 react-client/node_modules/*
 react-client/build/*
-workspace-platform/node_modules/*
-workspace-platform/build/*
+node_modules

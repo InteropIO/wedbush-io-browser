@@ -20,7 +20,7 @@ export const CustomSection = () => {
   const [frame, setFrame] = useState<IOConnectWorkspaces.Frame | undefined>({} as any)
 
   const sections = applications.reduce(
-    (acc, application) => {
+    (acc, application, idx) => {
       const appItem = {
         id: application.name,
         title: application.title || application.name,
@@ -28,6 +28,8 @@ export const CustomSection = () => {
         type: 'Application',
         iconSrc: application.icon,
         isOpen: runningInstances[application.name]?.length ? true : false,
+        isExternal: application.userProperties?.isExternal,
+        url: application.userProperties?.details?.url,
       } as BaseSectionItemType | BaseSectionType<BaseSectionItemType>
 
       const folderNames = application.userProperties?.tags
@@ -42,7 +44,7 @@ export const CustomSection = () => {
             folderItem.items.push(appItem)
           } else {
             acc.items.push({
-              id: folderName + '-' + appItem.id,
+              id: folderName + '-' + appItem.id + idx,
               title: folderName,
               items: [appItem],
             })
@@ -76,6 +78,21 @@ export const CustomSection = () => {
 
   const startApplication = async ({ item }: any) => {
     if (item.type !== 'Application') {
+      return
+    }
+
+    if (item.isExternal) {
+      // Specify location for the new window.
+      const options = {
+        top: 200,
+        left: 200,
+      }
+
+      const ioWindow = await io.windows.open(item.title, item.url, options)
+
+      // observe the window reference
+      console.log('ioWindow', ioWindow)
+
       return
     }
 
