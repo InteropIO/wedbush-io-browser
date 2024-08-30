@@ -89,9 +89,12 @@ export const CustomSection = () => {
       }
 
       const ioWindow = await io.windows.open(item.title, item.url, options)
+      const browserWindow = window.open(item.url, '_blank')
 
-      // observe the window reference
+      // observe the IOWindow reference
       console.log('ioWindow', ioWindow)
+      // observe the browser window reference
+      console.log('browserWindow', browserWindow)
 
       return
     }
