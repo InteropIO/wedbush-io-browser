@@ -9,6 +9,7 @@ import {
 import { getIOConfig } from './helpers'
 import '@interopio/workspaces-ui-react/dist/styles/workspaces.css'
 import '@interopio/home-ui-react/index.css'
+import './index.css'
 import { CustomSection } from './CustomSection'
 
 export function App() {
