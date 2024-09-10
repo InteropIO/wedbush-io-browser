@@ -10,6 +10,7 @@ import { getIOConfig } from './helpers'
 import '@interopio/workspaces-ui-react/dist/styles/workspaces.css'
 import '@interopio/home-ui-react/index.css'
 import { CustomSection } from './CustomSection'
+import WorkspaceTabV2 from './components/WorkspaceTabV2'
 
 export function App() {
   const ioConnectHomeConfig: IOConnectHomeConfig = useMemo(
@@ -39,6 +40,13 @@ export function App() {
           const user = { id: username, username, password }
 
           return user
+        },
+      },
+      workspaces: {
+        components: {
+          header: {
+            WorkspaceTabComponent: WorkspaceTabV2,
+          },
         },
       },
     }),
